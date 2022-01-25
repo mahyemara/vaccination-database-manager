@@ -1,0 +1,37 @@
+<style>
+  body {
+    background-color: #DBF9FC;
+  }
+</style>
+
+<form action="insertNewNurse.php" method="post">
+
+  <label>Enter Nurse EID: </label>
+  <input name="eid" type="text" placeholder="Type
+Here">
+  <br>
+  <label>Enter Nurse name: </label>
+  <input name="name" type="text" placeholder="Type
+Here">
+  <br>
+  <label>Enter Room Number Assigned to Nurse: </label>
+  Note: Room Number chosen according to centre: <br>
+  Please View Centre Information to find out rooms available in each centre <br>
+  <input name="number" type="text" placeholder="Type
+Here">
+  <br>
+  <label>Select Centre Name: </label>
+  <select name="centreName">
+    <option value="">Select...</option>
+    <option value="Vaccine Centre 1">Vaccine Centre 1</option>
+    <option value="Vaccine Centre 2">Vaccine Centre 2</option>
+    <option value="Vaccine Centre 3">Vaccine Centre 3</option>
+    <option value="Vaccine Centre 4">Vaccine Centre 4</option>
+    <option value="Vaccine Centre 5">Vaccine Centre 5</option>
+  </select>
+  <input type="submit" value="Insert">
+</form>
+
+<form action="insertFrontDesk.html" method="POST">
+  <input type="submit" value="Go Back to Insertion Page">
+</form>

@@ -1,0 +1,86 @@
+<style>
+    body {
+        background-color: #DBF9FC;
+    }
+</style>
+
+<body>
+<form action="insertResident.php" method="POST">
+    <input type="hidden" id="insertQueryRequest" name="insertQueryRequest">
+    <table cellspacing="10">
+        <tr>
+            <td>
+                <label>Name (First and Last)</label>
+            </td>
+            <td>
+                <input type="text" name ="insName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Health Insurance Number (4 NUMBERS)</label>
+            </td>
+            <td>
+                <input type="text" name ="insHIN">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Age</label>
+            </td>
+            <td>
+                <input type="integer" name ="insAge">
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td>
+                <label>Phone (9 NUMBERS)</label>
+            </td>
+            <td>
+                <input type="integer" name ="insPhone">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>ZIP (FORMAT: XXX XXX)</label>
+            </td>
+            <td>
+                <input type="text" name ="insZIP">
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td>
+                <label>Appointment</label>
+            </td>
+            <td>
+                <input type="date" name ="insAppointment">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Dose Number</label>
+            </td>
+            <td>
+                <select name="insDoseNumber" id="dose">
+                    <option value="1">0</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                </select>
+            </td>
+        </tr>
+
+    </table>
+
+    <input type="submit" value="book">
+</form>
+
+<form action="resident.html" method="POST">
+    <input type="submit" value="Go Back to Resident Page">
+</form>

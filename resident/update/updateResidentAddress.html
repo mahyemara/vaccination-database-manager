@@ -1,0 +1,26 @@
+<style>
+  body {
+    background-color: #DBF9FC;
+  }
+</style>
+
+<form action="updateResidentAddress.php" method="post">
+  This page allows Residents to change their Address. </br>
+  </br>
+
+  <label>Enter your current phone number <br>
+    (this should not be changed; i.e. this should be the same phone present in our records): </label>
+  <input name="phone" type="text" placeholder="Type
+Here">
+
+  <label>Enter your new ZIP (FORMAT: XXX XXX): </label>
+  <input name="zip" type="text" placeholder="Type
+Here">
+  <br>
+  <br>
+  <input type="submit" value="Update Address">
+</form>
+
+<form action="resident.html" method="POST">
+  <input type="submit" value="Go Back to Resident Page">
+</form>
